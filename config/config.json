@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "Arako200",
-    "database": "BabbleLogDB",
-    "host": "127.0.0.1",
+    "username": "tlee",
+    "password": "dszBO99ux3uG0mt5BggayP7PYW1HfLCR",
+    "database": "babble_log_db",
+    "host": "dpg-cg3dev7dvk4r4hhvq25g-a.ohio-postgres.render.com",
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "Arako200",
-    "database": "BabbleLogDB",
-    "host": "127.0.0.1",
+    "username": "tlee",
+    "password": "dszBO99ux3uG0mt5BggayP7PYW1HfLCR",
+    "database": "babble_log_db",
+    "host": "dpg-cg3dev7dvk4r4hhvq25g-a.ohio-postgres.render.com",
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "Arako200",
-    "database": "BabbleLogDB",
-    "host": "127.0.0.1",
+    "username": "tlee",
+    "password": "dszBO99ux3uG0mt5BggayP7PYW1HfLCR",
+    "database": "babble_log_db",
+    "host": "dpg-cg3dev7dvk4r4hhvq25g-a.ohio-postgres.render.com",
     "dialect": "postgres"
   }
 }

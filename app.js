@@ -172,6 +172,6 @@ app.get('/babble/folders', async(req, res) => {
       });
   })
 
-const server = app.listen(3003, function() {
-    console.log('listening on port 3003');
+const server = app.listen(3001, function() {
+    console.log('listening on port 3001');
 });
