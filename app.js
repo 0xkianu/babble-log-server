@@ -78,7 +78,7 @@ app.post('/login', async(req, res) => {
   }
 });
 
-app.post('/create_account', cors(corsOptions), async(req, res) => {
+app.post('/create_account', async(req, res) => {
   const user = await User.findAll({
     where: {
       username: {
