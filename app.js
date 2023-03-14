@@ -28,7 +28,7 @@ app.use(
 //Cors Configuration - Start
 const corsOptions = {
   origin: [
-    'https://www.thomasulee.com/',
+    'https://www.thomasulee.com',
   ],
 };
 //Cors Configuration - End
