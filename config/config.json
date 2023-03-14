@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "tlee",
+    "username": "postgres",
     "password": "Arako200",
     "database": "BabbleLogDB",
     "host": "database-1.csktzom6uj0m.us-east-2.rds.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {
-    "username": "tlee",
+    "username": "postgres",
     "password": "Arako200",
     "database": "BabbleLogDB",
     "host": "database-1.csktzom6uj0m.us-east-2.rds.amazonaws.com",
     "dialect": "postgres"
   },
   "production": {
-    "username": "tlee",
+    "username": "postgres",
     "password": "Arako200",
     "database": "BabbleLogDB",
     "host": "database-1.csktzom6uj0m.us-east-2.rds.amazonaws.com",
