@@ -26,7 +26,11 @@ app.use(
 );
 
 //Cors Configuration - Start
-app.use(cors());
+const corsOptions = {
+  origin: [
+    'https://www.thomasulee.com/',
+  ],
+};
 //Cors Configuration - End
 
 //test for accessibility
@@ -72,7 +76,7 @@ app.post('/login', async(req, res) => {
   }
 });
 
-app.post('/create_account', async(req, res) => {
+app.post('/create_account', cors(corsOptions), async(req, res) => {
   const user = await User.findAll({
     where: {
       username: {
