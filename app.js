@@ -7,6 +7,7 @@ const { Log, User, Folder } = require('./models');
 const { Op } = require('sequelize');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
+const cors = require('cors');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -25,11 +26,7 @@ app.use(
 );
 
 //Cors Configuration - Start
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-})
+app.use(cors());
 //Cors Configuration - End
 
 //test for accessibility
