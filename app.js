@@ -9,6 +9,7 @@ const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
 
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
@@ -26,11 +27,12 @@ app.use(
 );
 
 //Cors Configuration - Start
-const corsOptions = {
-  origin: [
-    'https://www.thomasulee.com',
-  ],
-};
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authortization');
+  res.setHeader('Acces-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
+  next();
+});
 //Cors Configuration - End
 
 //test for accessibility
