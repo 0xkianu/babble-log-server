@@ -17,9 +17,10 @@ app.use(cookieParser());
 app.use(
   session({
     secret: 'secret',
-    resave: false,
+    resave: true,
     saveUninitialized: true,
     cookie: {
+      domain: 'thomasulee.com',
       secure: true,
       httpOnly: true,
       sameSite: 'none',
