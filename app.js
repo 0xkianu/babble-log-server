@@ -70,7 +70,6 @@ app.post('/login', async(req, res) => {
     bcrypt.compare(req.body.passphrase, user[0].password, function(err, result) {
       if ((result) && (req.body.username === user[0].username)) {
         req.session.user = req.body.username;
-        console.log(req.session.user);
         res.json({success: true, message: 'Login success'});
       } else {
         res.json({success: false, message: 'Username or password invalid'});
