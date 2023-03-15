@@ -23,7 +23,7 @@ app.use(
       domain: 'thomasulee.com',
       secure: true,
       httpOnly: true,
-      sameSite: 'none',
+      SameSite: 'none',
       maxAge: 2592000000,
      } 
   })
